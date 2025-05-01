@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
+</head>
+<body>
+    <h1>Edit Task</h1>
+
+    <form action="/update/{{ task.id }}" method="post">
+        <label for="title">Task Title:</label><br>
+        <input type="text" id="title" name="title" value="{{ task.title }}" required><br><br>
+        <div class="task-actions">
+            <button type="submit" class="action-button">Update Task</button>
+            <a href="/cancel/{{ task.id }}" class="action-button delete-btn">Cancel</a>
+        </div>
+        
+    </form>
+</body>
+</html>

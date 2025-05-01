@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.task-form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+button.action-button,
+.task-actions a.action-button {
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: hsl(0, 82%, 37%); /* Primary blue for action buttons */
+}
+
+button.action-button:hover,
+.action-button:hover,
+.task-actions a.action-button:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"] {
+    background-color: hsl(122, 97%, 25%); /* Green for 'Add Task' */
+    border-radius: 0 4px 4px 0;
+    padding: 12px 20px; /* Ensure consistent padding */
+    color: white; /* Ensure consistent text color */
+    border: none; /* Ensure consistent border */
+    cursor: pointer; /* Ensure consistent cursor */
+    font-size: 16px; /* Ensure consistent font size */
+}
+
+button[type="submit"]:hover {
+    background-color: #0a750f;
+}
+
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between */
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border-left: 5px solid #4CAF50;
+}
+input[type="checkbox"] {
+    accent-color: green; /* Replace 'green' with your desired color */
+}
+
+.task-item.completed {
+    border-left-color: #130596;
+    background-color: #f0f0f0;
+    color: #2b0b0b;
+}
+
+.complete-form {
+    margin-right: 10px;
+}
+
+.task-title {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.task-actions .delete-btn {
+    background-color: #f44336; /* Red for 'Delete' */
+    color: white; /* Ensure text color for delete button */
+    padding: 8px 12px; /* Consistent padding */
+    border-radius: 4px; /* Consistent border radius */
+    text-decoration: none; /* Remove underline */
+}
+
+.task-actions .delete-btn:hover {
+    background-color: #6b0b0b;
+}
+
+.no-tasks {
+    text-align: center;
+    color: hsl(120, 92%, 26%);
+    padding: 20px;
+}
