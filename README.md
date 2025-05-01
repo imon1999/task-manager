@@ -55,12 +55,3 @@ This is a web-based Task Manager application built using Python, FastAPI, Jinja2
 
 The application uses an SQLite database (`./sql_app.db` by default). The database file will be created automatically in the project directory when the application is run for the first time.
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes and commit them.
-4.  Push your changes to your fork.
-5.  Submit a pull request.
